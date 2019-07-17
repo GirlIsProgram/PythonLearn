@@ -90,7 +90,7 @@ print(cnumber // bnumber) # 0
 print("-------------")
 
 
-#逻辑运算符
+#比较运算符
 
 #等于 == 比较对象是否相等 ---- int类型与float类型值相等则返回True, int与float类型与str类型值相等也不会返回True
 print(anumber == bnumber) # False
@@ -321,3 +321,52 @@ gfloat = 55.5
 gfloat %= afloat
 print(gfloat)
 print("--------------")
+
+#幂赋值运算符 **=
+inumber = 10
+inumber **= anumber
+print(inumber)
+
+'''
+错误 str类型不能与int类型 **=
+inumber = 10
+estr = "asdf"
+estr **= inumber
+print(estr)
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+
+错误 不可与float类型进行**=
+estr = "asdf"
+estr **= afloat
+print(estr)
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'float'
+
+错误 str类型不可 **=
+estr = 'asdasdasdasd'
+fstr = 'asd'
+estr **= fstr
+print(estr)
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'
+'''
+
+gfloat = 55.5
+gfloat **= anumber
+print(gfloat)
+
+gfloat = 55.5
+gfloat **= afloat
+print(gfloat)
+print("--------------")
+
+# 取整除赋值运算符，请参考除号与除等运算符结果
+
+#逻辑运算符
+# and (a and b)并且关系。a=true且b=true则整体结果为true。否则为false
+# or 或者关系。or两边一个为true则整体结果为true
+# not 非，结果为true则最终结果为false，结果为false则最终结果为true
+
+#成员关系
+#in 如果在指定的序列中找到值返回True,否则返回False
+#not in 如果在指定序列中没有找到值返回True，否则返回False
+
+#数据类型 int、float、complex、bool、str
