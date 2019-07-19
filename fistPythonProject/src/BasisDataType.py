@@ -50,7 +50,7 @@ print(anumber * fnumber)# 0
 #print(astr * bstr)# 错误 TypeError: can't multiply sequence by non-int of type 'str'
 print("-------------")
 
-#除号 /
+#除号 / 除永远返回浮点类型
 print(bnumber / anumber)# 2.0
 print(anumber / bnumber)# 0.5
 #print(anumber / fnumber)# 错误 ZeroDivisionError: division by zero
