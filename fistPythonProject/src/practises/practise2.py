@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 #1-100所有数的和
 '''
 x = 0
@@ -26,6 +27,7 @@ print(dic)
 '''
 
 #将一个集合中数字进行组合。组合成为两位数且不重复 抄袭实现方式
+'''
 li = [1,2,3,4,5,6,7,8,8]
 li2 = []
 li3 = []
@@ -51,3 +53,25 @@ for i in li:
                 li2.append(a)
 print(li2)
 print(len(li2))
+'''
+
+'''
+r = (72 / 85) * 100
+print('%.1f%%'%r)
+'''
+
+def power(x, n = 2): # n = 2 默认参数。不传值则默认等于2
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+print(power(5))
+print(5**3)
+
+def cnss(*number): # 可变参数
+    for num in number:
+        print(num)
+
+cnss([1,66,44])
